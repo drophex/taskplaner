@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="ASCII"?>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_B0ZUYAyHEeuRBZtiRuO4Ww" elementId="com.ssischaefer.tasks.ui.application">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_MUkukAyHEeuRBZtiRuO4Ww" elementId="com.ssischaefer.tasks.ui.trimmedwindow.taskmanager" label="Karl's Taskplaner" iconURI="platform:/plugin/com.ssischaefer.tasks.ui/main_tab.png" width="1024" height="600">
+    <children xsi:type="basic:PartSashContainer" xmi:id="_UDwLUAyIEeuRBZtiRuO4Ww" elementId="com.ssischaefer.tasks.ui.partsashcontainer.main" horizontal="true">
+      <children xsi:type="basic:PartStack" xmi:id="_dTbm8AyIEeuRBZtiRuO4Ww" elementId="com.ssischaefer.tasks.ui.partstack.overviewstack">
+        <children xsi:type="basic:Part" xmi:id="_0NVW4AyIEeuRBZtiRuO4Ww" elementId="com.ssischaefer.tasks.ui.part.overview" contributionURI="bundleclass://com.ssischaefer.tasks.ui/com.ssischaefer.tasks.ui.parts.OverviewPart" label="Overview"/>
+      </children>
+    </children>
+    <children xsi:type="basic:PartSashContainer" xmi:id="_gVAhkAyIEeuRBZtiRuO4Ww" elementId="com.ssischaefer.tasks.ui.partsashcontainer.sec">
+      <children xsi:type="basic:PartStack" xmi:id="_g2v8sAyIEeuRBZtiRuO4Ww" elementId="com.ssischaefer.tasks.ui.partstack.detailsstack">
+        <children xsi:type="basic:Part" xmi:id="_BTJWkAyJEeuRBZtiRuO4Ww" elementId="com.ssischaefer.tasks.ui.part.details" contributionURI="bundleclass://com.ssischaefer.tasks.ui/com.ssischaefer.tasks.ui.parts.DetailsPart" label="Task Details"/>
+      </children>
+      <children xsi:type="basic:PartStack" xmi:id="_hNzx0AyIEeuRBZtiRuO4Ww" elementId="com.ssischaefer.tasks.ui.partstack.playgroundstack">
+        <children xsi:type="basic:Part" xmi:id="_DTGcIAyJEeuRBZtiRuO4Ww" elementId="com.ssischaefer.tasks.ui.part.editor" contributionURI="bundleclass://com.ssischaefer.tasks.ui/com.ssischaefer.tasks.ui.parts.TaskEditorPart" label="Task Editor"/>
+      </children>
+    </children>
+    <mainMenu xmi:id="_byD40AyeEeuRBZtiRuO4Ww" elementId="org.eclipse.ui.main.menu">
+      <children xsi:type="menu:Menu" xmi:id="_vZ1wsAyeEeuRBZtiRuO4Ww" elementId="org.eclipse.ui.file.menu" label="File">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_4DVWEAyeEeuRBZtiRuO4Ww" elementId="com.ssischaefer.tasks.ui.handledmenuitem.save" command="_5r-ZwAycEeuRBZtiRuO4Ww"/>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_y_Q_QAyeEeuRBZtiRuO4Ww" elementId="com.ssischaefer.tasks.ui.menu.edit" label="Edit">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_BORboAyfEeuRBZtiRuO4Ww" elementId="com.ssischaefer.tasks.ui.handledmenuitem.new" label="Create Task" command="_FgLnoAydEeuRBZtiRuO4Ww"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_FXukUAyfEeuRBZtiRuO4Ww" elementId="com.ssischaefer.tasks.ui.handledmenuitem.remove" label="Remove Task" command="_HaMdQAydEeuRBZtiRuO4Ww"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_8sxmYAyeEeuRBZtiRuO4Ww" elementId="com.ssischaefer.tasks.ui.handledmenuitem.saveall" label="Save All" command="_5r-ZwAycEeuRBZtiRuO4Ww"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_Jz6bwAyfEeuRBZtiRuO4Ww" elementId="com.ssischaefer.tasks.ui.handledmenuitem.test" label="Load tasks" command="_JLkUQAydEeuRBZtiRuO4Ww"/>
+      </children>
+      <children xsi:type="menu:HandledMenuItem" xmi:id="_Pf3R8AyfEeuRBZtiRuO4Ww" elementId="com.ssischaefer.tasks.ui.handledmenuitem.exit" label="Exit" command="_DCxxEAydEeuRBZtiRuO4Ww"/>
+    </mainMenu>
+  </children>
+  <handlers xmi:id="_-skJUAydEeuRBZtiRuO4Ww" elementId="com.ssischaefer.tasks.ui.handler.saveall" contributionURI="bundleclass://com.ssischaefer.tasks.ui/com.ssischaefer.tasks.ui.handlers.SaveAllHandler" command="_5r-ZwAycEeuRBZtiRuO4Ww"/>
+  <handlers xmi:id="_LSK-8AyeEeuRBZtiRuO4Ww" elementId="com.ssischaefer.tasks.ui.handler.exit" contributionURI="bundleclass://com.ssischaefer.tasks.ui/com.ssischaefer.tasks.ui.handlers.ExitHandler" command="_DCxxEAydEeuRBZtiRuO4Ww"/>
+  <handlers xmi:id="_N7yskAyeEeuRBZtiRuO4Ww" elementId="com.ssischaefer.tasks.ui.handler.new" contributionURI="bundleclass://com.ssischaefer.tasks.ui/com.ssischaefer.tasks.ui.handlers.NewTaskHandler" command="_FgLnoAydEeuRBZtiRuO4Ww"/>
+  <handlers xmi:id="_RgoFQAyeEeuRBZtiRuO4Ww" elementId="com.ssischaefer.tasks.ui.handler.remove" contributionURI="bundleclass://com.ssischaefer.tasks.ui/com.ssischaefer.tasks.ui.handlers.RemoveTaskHandler" command="_HaMdQAydEeuRBZtiRuO4Ww"/>
+  <handlers xmi:id="_UjsNoAyeEeuRBZtiRuO4Ww" elementId="com.ssischaefer.tasks.ui.handler.load" contributionURI="bundleclass://com.ssischaefer.tasks.ui/com.ssischaefer.tasks.ui.handlers.OpenHandler" command="_JLkUQAydEeuRBZtiRuO4Ww"/>
+  <commands xmi:id="_5r-ZwAycEeuRBZtiRuO4Ww" elementId="org.eclipse.ui.file.saveAll" commandName="Save"/>
+  <commands xmi:id="_DCxxEAydEeuRBZtiRuO4Ww" elementId="org.eclipse.ui.file.exit" commandName="Exit"/>
+  <commands xmi:id="_FgLnoAydEeuRBZtiRuO4Ww" elementId="com.ssischaefer.tasks.ui.command.new" commandName="Create task"/>
+  <commands xmi:id="_HaMdQAydEeuRBZtiRuO4Ww" elementId="com.ssischaefer.tasks.ui.command.remove" commandName="Remove task"/>
+  <commands xmi:id="_JLkUQAydEeuRBZtiRuO4Ww" elementId="com.ssischaefer.tasks.ui.command.load" commandName="Load tasks"/>
+  <addons xmi:id="_B0ZUYQyHEeuRBZtiRuO4Ww" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
+  <addons xmi:id="_B0ZUYgyHEeuRBZtiRuO4Ww" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
+  <addons xmi:id="_B0ZUYwyHEeuRBZtiRuO4Ww" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
+  <addons xmi:id="_B0ZUZAyHEeuRBZtiRuO4Ww" elementId="org.eclipse.e4.ui.workbench.commands.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon"/>
+  <addons xmi:id="_B0ZUZQyHEeuRBZtiRuO4Ww" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
+  <addons xmi:id="_B0ZUZgyHEeuRBZtiRuO4Ww" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
+  <addons xmi:id="_B0ZUZwyHEeuRBZtiRuO4Ww" elementId="org.eclipse.e4.ui.workbench.handler.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
+</application:Application>

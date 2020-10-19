@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Parts
+Bundle-SymbolicName: com.ssischaefer.contribute.parts;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: SSISCHAEFER
+Require-Bundle: org.eclipse.core.runtime;bundle-version="3.19.0",
+ org.eclipse.jface;bundle-version="3.21.0",
+ org.eclipse.e4.core.di;bundle-version="1.7.600",
+ org.eclipse.e4.ui.workbench;bundle-version="1.11.400",
+ org.eclipse.e4.ui.di;bundle-version="1.2.800",
+ org.eclipse.e4.ui.model.workbench;bundle-version="2.1.800.v20200828-0938"
+Bundle-RequiredExecutionEnvironment: JavaSE-11
+Import-Package: javax.annotation;version="1.3.5"
+Automatic-Module-Name: com.ssischaefer.contribute.parts
