@@ -2,6 +2,8 @@ package com.ssischaefer.tasks.ui.handlers;
 
 import java.util.List;
 
+import javax.inject.Inject;
+
 import org.eclipse.e4.core.di.annotations.Execute;
 import org.eclipse.swt.widgets.FileDialog;
 import org.eclipse.swt.widgets.Shell;
@@ -11,6 +13,10 @@ import com.ssischaefer.tasks.ui.service.TaskHelper;
 import com.ssischaefer.tasks.ui.service.WriterReader;
 
 public class OpenHandler {
+
+	@Inject
+	WriterReader writerReader;
+	
 	@Execute
     public void execute(Shell shell) {
 		FileDialog dialog = new FileDialog(shell);
@@ -19,7 +25,7 @@ public class OpenHandler {
 		String path = dialog.getFilterPath();
 		String filename = dialog.getFileName();
 		TaskHelper model = TaskHelper.getInstance();
-		List<Task> loadedTasks = WriterReader.readTasksToDisk(shell, path + "\\" + filename);
+		List<Task> loadedTasks = writerReader.readTasksToDisk(shell, path + "\\" + filename);
 		if (!loadedTasks.isEmpty()) {
 		model.getCurrentTableViewer().setInput(loadedTasks);
 		model.getCurrentTableViewer().refresh();

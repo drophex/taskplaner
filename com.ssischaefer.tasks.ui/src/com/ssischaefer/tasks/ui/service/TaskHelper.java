@@ -77,7 +77,7 @@ public class TaskHelper {
 	public static List<Task> createInitialDataModel() {
 		TaskHelper model = TaskHelper.getInstance();
 		List<Task> taskList = new ArrayList<>();
-		taskList.add(new Task(1, "Dish Washer", "Fix the broken dish wascher", false));
+		taskList.add(new Task(1, "Dish Washer", "Fix the broken dish washer", false));
 		taskList.add(new Task(2, "SSI Schäfer tool", "Finish the tutorial tool for SSI Schäfer", false));
 		taskList.add(new Task(3, "Prime Day!", "Check the current prime day offers", true));
 		taskList.add(new Task(4, "Salt", "Add salt to the next shopping list", false));
